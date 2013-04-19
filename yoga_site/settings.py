@@ -48,7 +48,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = '/Users/Hazel/Movies/'
+MEDIA_ROOT = '/Users/Hazel/user_uploaded/'
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -59,7 +59,7 @@ MEDIA_URL = '/media/'
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/home/desktop/yoga_site/yoga_front/static/'
+STATIC_ROOT = '/Users/Hazel/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -70,7 +70,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/Hazel/static/"
+    "/Users/Hazel/Desktop/yoga_site/yoga_front/static"
 )
 
 # List of finder classes that know how to find static files in
@@ -111,14 +111,14 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/Desktop/yoga_site/templates"
+    "/Users/Hazel/Desktop/yoga_site/yoga_front/templates"
 )
 
-# CACHES = {
-#     'default': {
-#         'BACKEND': 'django.core.cache.backends.locmen.LocMemCache',
-#     }
-# }
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
+}
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -128,9 +128,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'django.contrib.admindocs',
     'compressor',
-    'yoga_site',
-    'ws_comm'
+    'yoga_front',
+    'ws_comm',
 )
 
 # Compressor Settings
@@ -176,5 +177,5 @@ LOGGING = {
 
 
 WS_SERVER_IP = '127.0.0.1'
-WS_SERVER_HTTP = 8000
+WS_SERVER_HTTP = 8090
 WS_SERVER_HTTP_SSL = False
