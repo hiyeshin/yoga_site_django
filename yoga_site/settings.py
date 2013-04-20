@@ -70,9 +70,8 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    "/Users/Hazel/Desktop/yoga_site/yoga_front/static"
+    "/Users/Hazel/Desktop/yoga_site/yoga_front/static",
 )
-
 # List of finder classes that know how to find static files in
 # various locations.
 STATICFILES_FINDERS = (
@@ -80,6 +79,7 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
     'compressor.finders.CompressorFinder',
+    'less.finders.LessFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -132,12 +132,13 @@ INSTALLED_APPS = (
     'compressor',
     'yoga_front',
     'ws_comm',
-    'user_api'
+    'user_api',
+    'less'
 
 )
 
 # Compressor Settings
-COMPRESS_ENABLED = False
+COMPRESS_ENABLED = True
 
 COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
