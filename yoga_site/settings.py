@@ -132,6 +132,8 @@ INSTALLED_APPS = (
     'compressor',
     'yoga_front',
     'ws_comm',
+    'user_api'
+
 )
 
 # Compressor Settings
