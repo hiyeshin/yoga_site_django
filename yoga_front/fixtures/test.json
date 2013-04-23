@@ -1,7 +1,7 @@
 [
     {
         "pk":"aa:bb:cc:dd:ee",
-        "model":"pi_io_site.raspberrypi",
+        "model":"yoga_front.raspberrypi",
         "fields":{
             "current_ip":"192.168.1.201",
             "name":"SuperPi",
@@ -11,7 +11,7 @@
     },
     {
         "pk":1,
-        "model":"pi_io_site.rpireadinterface",
+        "model":"yoga_front.rpireadinterface",
         "fields":{
             "name":"ADC",
             "possible_choices":"[{\"s\":1, \"d\":\"CH1\"}, {\"s\":2, \"d\":\"CH2\"}, {\"s\":3, \"d\":\"CH3\"}, {\"s\":4, \"d\":\"CH4\"}]",
@@ -22,7 +22,7 @@
     },
     {
         "pk":1,
-        "model":"pi_io_site.rpiwriteinterface",
+        "model":"yoga_front.rpiwriteinterface",
         "fields":{
             "name":"GPIO output",
             "possible_choices":"[{\"s\":1, \"d\":\"GPIO1\"}, {\"s\":2, \"d\":\"GPIO2\"}, {\"s\":3, \"d\":\"GPIO3\"}, {\"s\":4, \"d\":\"GPIO4\"}]",
@@ -33,7 +33,7 @@
     },
     {
         "pk":2,
-        "model":"pi_io_site.rpireadinterface",
+        "model":"yoga_front.rpireadinterface",
         "fields":{
             "name":"GPIO input",
             "possible_choices":"[{\"s\":1, \"d\":\"GPIO1\"}, {\"s\":2, \"d\":\"GPIO2\"}, {\"s\":3, \"d\":\"GPIO3\"}, {\"s\":4, \"d\":\"GPIO4\"}]",
