@@ -179,6 +179,6 @@ LOGGING = {
 }
 
 
-WS_SERVER_IP = '0.0.0.0' #PiIO.WS/server.py line 13
+WS_SERVER_IP = "127.0.0.1" #PiIO.WS/server.py line 13
 WS_SERVER_HTTP = 8090
 WS_SERVER_HTTP_SSL = False
