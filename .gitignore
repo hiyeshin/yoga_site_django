@@ -33,3 +33,9 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+.idea/
+CACHE/
+*.pyc
+.DS_Store
+db.sqlite3

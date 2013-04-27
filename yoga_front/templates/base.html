@@ -9,14 +9,13 @@
 
     {% compress css %}
     {% block styles %}
-        <!-- Bootstrap -->
         <link rel="stylesheet" type="text/less" href="{% static "bootstrap/less/bootstrap.less" %}" media="screen" />
         <link rel="stylesheet" type="text/less" href="{% static "bootstrap/less/responsive.less" %}" media="screen" />
-
         <link rel="stylesheet" type="text/less" href="{% static "css/global.less" %}" media="screen" />
     {% endblock %}
     {% endcompress %}
 </head>
+
 <body>
 {% block body %}{% endblock %}
 <div class="navbar navbar-fixed-top">
@@ -33,13 +32,14 @@
                 <ul class="nav" id="main-menu-left">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Choose your device
+                            Choose your Smart Mat
                             <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
                         </ul>
                     </li>
                 </ul>
+                <!-- this locates top right -->
                 <ul id="main-menu-right" class="nav pull-right">
                     <li><a href="/admin">Account</a></li>
                 </ul>
