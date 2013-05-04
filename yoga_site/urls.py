@@ -7,10 +7,12 @@ admin.autodiscover()
 urlpatterns = patterns('',
     # Examples:
     url(r'^$', 'yoga_front.views.home', name='home'),
-    #url(r'^yoga_site/', include('yoga_site.urls')),
+    # url(r'^main/', include('main.urls')),
+    url(r'^main/', 'main.views.main', name = 'main'),
 	url(r'^ws_comm/', include('ws_comm.urls')),
 	url(r'^user_api/', include('user_api.urls')),
 	url(r'^displays/(?P<rpi_mac>.+)$', 'yoga_front.views.rpi_displays'),
+
 
 
     # Uncomment the admin/doc line below to enable admin documentation:

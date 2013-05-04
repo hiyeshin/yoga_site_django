@@ -35,14 +35,14 @@ html {
 
 body{
   height: 100%;
-  background-color: #f4f2e3;
+  background-color: #ffffff;
 }
 
 
 @font-face {
-font-family: "Georgia", Times New Roman, Serif;
-font-weight: normal;
-font-style: normal;
+  font-family: "Georgia", Times New Roman, Serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -88,10 +88,12 @@ p{
 }
 
 
+/*this is for navigation top*/
 ul{
   list-style-type:none;
   margin:0;
-  padding-bottom:180px;
+  padding-top:25px;
+  padding-bottom:25px;
   overflow: hidden;
 }
 
@@ -103,39 +105,24 @@ li{
 
 
 li a{
-  width:80px;
+  width:180px;
   display: block;
   padding-left: 20px;
 }
 
-li a:hover{
-  
-  display: none;
-  /*color: #333;*/
-}
 
+li a:hover{  
+  display: none;
+}
 
 
 a:hover{
 
-  border-bottom: 1px dotted #000; 
   /*color: #333;
   font-weight: bold;*/
   text-decoration: none;
 }
 
-
- #container {
-  position: absolute;
-  top:220px;
-  /*left:0px;*/ 
-  width:100%;
-  min-height:100%;
-  height: auto !important;
-  min-width:1150px;
-  margin: 0 auto -50px;
-  /*background-image: url('/static/img/linedpaper.png');*/
-}
 
 
 #push, #footer{
@@ -150,13 +137,6 @@ a:hover{
   /*padding-top:20px;*/
 }
 
-
-article:hover {
-  /*background-color:#f8f8f8;*/
-  /*background-image: url('/static/img/linedpaper.png');*/
-  /*background-repeat:repeat-x;*/
-}
-
 .displayed {
   display: block;
   margin-left:auto;
@@ -166,42 +146,31 @@ article:hover {
 
 
 #header{
-  position: absolute;
+  position: relative;
   z-index:1000;
   top: 25px;
-  left: 6%;
-/*  height:253px;
-  width:932px;*/
+  left: 40%;
   overflow:hidden;
   color:#000;
 }
 
-
-.dropcap{
-  color: #887072;
-  font:normal 48px "ltc-bodoni-175", Georgia;
-  line-height:20px;
-  letter-spacing:1px;
-
-}
-
-
-.subtitle{
-  z-index: 1000;
-}
-
-
-
-
-.wide_column_header{
+#menu-left{
   position: relative;
-  top: 300 px;
-  margin-left: -20px;
-  padding-left: 0px;
-  /*padding-right: 70px;*/
-  padding-bottom: 60px;
-  float: center;
+  z-index:1000;
+  top: 0px;
+  left: 70%;
+  overflow:hidden;
+  color:#000;  
+}
 
+#menu-right{
+  position: relative;
+  z-index:1000;
+  top: 0px;
+  left: 20%;
+  overflow:hidden;
+  color:#000;
+  
 }
 
 
@@ -209,14 +178,6 @@ article:hover {
   display: block;
 }
 
-
-
-
-
-/*body {
-    padding-top: 40px;
-    padding-bottom: 40px;
-}*/
 
 .messagecontainer .alert {
     margin-top: 10px;
@@ -234,16 +195,18 @@ article:hover {
 .dropdown-menu li > a.offline_pi:hover,
 .dropdown-menu li > a.offline_pi:focus {
   text-decoration: none;
-  color: @dropdownLinkColorHover;
-  #gradient > .vertical(@dropdownLinkBackgroundHoverOfflinePI, darken(@dropdownLinkBackgroundHoverOfflinePI, 5%));
+  //color: @dropdownLinkColorHover;
+ // #gradient > .vertical(@dropdownLinkBackgroundHoverOfflinePI, darken(@dropdownLinkBackgroundHoverOfflinePI, 5%));
 }
+
+
 // active
 .dropdown-menu .active > a.offline_pi,
 .dropdown-menu .active > a.offline_pi:hover {
-  color: @dropdownLinkColorActive;
+  //color: @dropdownLinkColorActive;
   text-decoration: none;
   outline: 0;
-  #gradient > .vertical(@dropdownLinkBackgroundActiveOfflinePI, darken(@dropdownLinkBackgroundActiveOfflinePI, 5%));
+  //#gradient > .vertical(@dropdownLinkBackgroundActiveOfflinePI, darken(@dropdownLinkBackgroundActiveOfflinePI, 0%));
 }
 
 
@@ -256,7 +219,7 @@ article:hover {
   font-size: 12px;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  #gradient > .vertical(#149bdf, #0480be);
+//  #gradient > .vertical(#149bdf, #0480be);
   .box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
   .box-sizing(border-box);
 }

@@ -15,12 +15,12 @@ $(document).ready(function() {
 
     client.e_rpi_online = function(rpi_mac) {
         interface.getAjaxMenu();
-        interface.notify('A raspberry pi has come online', 'success', 5000);
+        interface.notify('Your Smart Mat has come online', 'success', 5000);
     };
 
     client.e_rpi_offline = function(rpi_mac) {
         interface.getAjaxMenu();
-        interface.notify('A raspberry pi has gone offline', 'error', 5000);
+        interface.notify('Your Smart Mat has gone offline', 'error', 5000);
         // our RPI went offline, cleanup
         if (client.bound_rpi_mac && client.bound_rpi_mac == rpi_mac)
         {
@@ -33,7 +33,7 @@ $(document).ready(function() {
     client.e_rpi_drop_stream = function(rpi_mac) {
         if (client.bound_rpi_mac && client.bound_rpi_mac == rpi_mac)
         {
-            interface.notify('The raspberry pi has been reconfigured', 'info', 5000);
+            interface.notify('Your Smart Mat has been reconfigured', 'info', 5000);
         }
     };
 

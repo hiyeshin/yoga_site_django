@@ -27,9 +27,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </a>
-            <a class="brand" href="../">Smart Mat</a>
+
+            <a id="header" href="../">Smart Mat</a>
+
             <div class="nav-collapse" id="main-menu">
-                <ul class="nav" id="main-menu-left">
+                <ul class="nav" id="menu-left">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             Choose your Smart Mat
@@ -40,7 +42,7 @@
                     </li>
                 </ul>
                 <!-- this locates top right -->
-                <ul id="main-menu-right" class="nav pull-right">
+                <ul id="menu-right" class="nav pull-right">
                     <li><a href="/admin">Account</a></li>
                 </ul>
             </div>
@@ -59,11 +61,15 @@
         <!-- displays get placed in here via ajax -->
         <div class="row">
             <div class="span12">
-                <h2 style="text-align: center;">To begin select a RPI</h2>
+                <h2 style="text-align: center;">To begin select your Smart Mat</h2>
             </div>
         </div>
     </div>
     <hr>
+
+
+{% block content %}{% endblock %}
+
 
     <footer>
         <p>&copy; Hiye Shin 2013</p>

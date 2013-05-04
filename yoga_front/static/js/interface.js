@@ -45,7 +45,7 @@ Interface.prototype.createRpiList = function(data) {
     var li_lst = [];
     if (data.length == 0)
     {
-        li = $('<li><a href="#" class="offline_pi">No RPIs</a></li>');
+        li = $('<li><a href="#" class="offline_pi">No Your Smart Mats</a></li>');
         li_lst.push(li);
         dropdownul.append(li_lst);
         return null
